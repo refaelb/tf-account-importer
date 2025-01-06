@@ -1,3 +1,3 @@
-region  = "${REGION}"
+region  = "${BUCKET_REGION}"
 profile = "${PROFILE}"
 bucket  = "${BUCKET}"

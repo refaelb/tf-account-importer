@@ -38,11 +38,11 @@ The `create-files.sh` script generates backend configuration files for managing 
 
 ### Usage
 ``` bash
-chmod +x create-files.sh && ./create-files.sh -profile <your profile> -bucket <your bucket name to terraform state>
+chmod +x create-files.sh && ./create-files.sh -profile <your profile> -bucket <your bucket name to terraform state>  -bucket-region <your bucket region> -account-name <your env/account name>
 ```
 ### example:
 ```bash
- create-files.sh && ./create-files.sh dev-account terraform-bucket-state
+ create-files.sh && ./create-files.sh dev-account terraform-bucket-state -bucket-region us-east-1 -account-name integration
 ```
 
 ## run terraform & get logs to logs.yaml file
