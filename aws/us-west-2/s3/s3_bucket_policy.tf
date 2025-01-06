@@ -1,0 +1,4 @@
+resource "aws_s3_bucket_policy" "tfer--geisinger-data-bucket" {
+  bucket = "geisinger-data-bucket"
+  policy = "{\"Statement\":[{\"Action\":[\"s3:GetBucketVersioning\",\"s3:GetObjectVersionForReplication\",\"s3:GetObjectVersionAcl\",\"s3:GetObjectVersionTagging\"],\"Condition\":{\"ArnLike\":{\"aws:SourceArn\":\"arn:aws:s3:::geisinger-data-bucket\"},\"StringEquals\":{\"aws:SourceAccount\":\"650251715284\"}},\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"s3.amazonaws.com\"},\"Resource\":[\"arn:aws:s3:::geisinger-data-bucket\",\"arn:aws:s3:::geisinger-data-bucket/*\"]},{\"Action\":[\"s3:GetObject\",\"s3:ListBucket\"],\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::851725650090:role/iam_fetch-data__role\"},\"Resource\":[\"arn:aws:s3:::geisinger-data-bucket\",\"arn:aws:s3:::geisinger-data-bucket/*\"]}],\"Version\":\"2012-10-17\"}"
+}
