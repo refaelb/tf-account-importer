@@ -1,3 +1,0 @@
-region  = "us-east-1"
-profile = "opmed-integration"
-bucket  = "opmed-ai-tf-integration"

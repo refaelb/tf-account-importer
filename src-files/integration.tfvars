@@ -1,3 +1,0 @@
-REGION  = "${REGION}"
-PROFILE = "${PROFILE}"
-BUCKET  = "${BUCKET}"

@@ -1,3 +1,0 @@
-region  = "${REGION}"
-profile = "${PROFILE}"
-bucket  = "${BUCKET}"
