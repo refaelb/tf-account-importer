@@ -45,18 +45,20 @@ chmod +x create-files.sh && ./create-files.sh -profile <your profile> -bucket <y
  create-files.sh && ./create-files.sh dev-account terraform-bucket-state -bucket-region us-east-1 -account-name integration
 ```
 
-## run terraform & get logs to logs.yaml file
+## run terraform commands 
+the code terraform-command.py run terraform init & plan & get logs to logs.yaml file
 ### Usage
 
 ```python
-python3 terraform-command.py
+python3 terraform-command.py <account/env name>
 ```
 
-## run script to fix errors
-
+### example:
 ```python
-python3 fix.py
+python3 terraform-command.py integration
+
 ```
+
 
 
 
